@@ -1,3 +1,5 @@
+// Part 1
+
 var fs = require('fs');
 
 var inputData = fs.readFileSync('input.txt').toString().split("\n");
@@ -13,4 +15,4 @@ for(i in inputData) {
     }
 }
 
-console.log(values.sort(function(a, b){return b - a}))
+console.log(values.sort((a, b) => {return b - a}))
